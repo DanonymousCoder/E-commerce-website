@@ -1,3 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+/**
+* Fonts :
+* - Rubik
+    -Poppins 
+*/
+
 :root {
     --primary-color: #ff6b6b;
     --secondary-color: #794afa;
@@ -25,6 +32,10 @@
     --trans-background: background-color .3s;
     --trans-color: color .3s;
 }
+
+
+
+
 *{
     margin:0;
     padding:0;
@@ -32,6 +43,7 @@
 *, ::before, ::after {
     box-sizing: border-box;
 }
+
 body {
     font-family: 'Rubik', sans-serif;
     font-size: 16px;
@@ -51,4 +63,79 @@ ul {
 img {
     max-width: var(--percent100);
     vertical-align: middle;
+}
+strong {
+    font-weight: var(--fw8);
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+input::placeholder {
+    font:  inherit;
+}
+
+h1,h2,h3,h4 {
+    font-family: 'Poppins';
+}
+
+h1 {
+    font-size: calc(1.3em + 1vw);
+    font-weight: var(--fw8);
+    line-height: 1;
+}
+h2 {
+    font-size: 2.5em;
+}
+h3 {
+    font-size: 1.2em;
+    font-weight: var(--fw7);
+}
+h4 {
+    font-size: 1em;
+    font-weight: var(--fw6);
+}
+
+/* ----------------------
+    REUSABLE SELECTOR
+ * -----------------------*/
+
+ .container {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 0.938em;
+ }
+ .column {
+    margin-left: -0.938em;
+    margin-right: -0.938em;
+ }
+ .column .row {
+    padding: 0 0.938em;
+ }
+ .flexwrap {
+    display: flex;
+    flex-wrap: wrap;
+ }
+ .flexcenter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ }
+ .flexitem {
+    display: flex;
+    align-items: center;
+ }
+ .flexcol {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+ }
+
+ /* ---------------
+    * HEADER
+ *  ----------------*/
+@media  screen and (min-width: 992px) {
+    .container {
+        padding: 0 2em;
+    }
 }
