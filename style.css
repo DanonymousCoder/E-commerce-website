@@ -361,6 +361,9 @@ nav .fly-item {
     border-radius: var(--white-color);
     margin-bottom: -2.15em;
 }
+.dpt-cat .dpt-head .main-text {
+    color: var(--light-bg-color);
+}
 .dpt-cat .dpt-head .mini-text {
     color: var(--light-bg-color);
 }
@@ -379,7 +382,7 @@ nav .fly-item {
 .header-main .right {
     flex: 1;
 }
-form {
+form.search {
     position: relative;
 }
 form.search input {
@@ -392,7 +395,7 @@ form.search input {
     font-size: 0.9em;
     font-weight: var(--fw3);
 }
-form.search :where(span.button) {
+form.search :where(span, button) {
     position: absolute;
     top: 0;
     padding: 0.55em 1.5em;
@@ -404,7 +407,7 @@ form.search button {
     right: 0;
     border: 0;
     outline: 0;
-    font-size: 0.075em;
+   /* font-size: 0.055em; */
     font-weight: var(--fw6);
     background-color: var(--primary-color);
     color: var(--white-color);
@@ -510,5 +513,35 @@ form.search button:hover {
         font-weight: var(--fw8);
         text-align: center;
         color: var(--secondary-dark-color);
+    }
+
+    .header-main .right {
+        max-width: 600px;
+        margin-left: auto;
+    }
+
+    /* Departments menu */
+    .dpt-menu {
+        position: absolute;
+        top: var(--percent100);
+        width: 300px;
+        background-color: var(--white-color);
+        border: 1px solid var(--border-color);
+        border-top: 0;
+        border-bottom: 0;
+    }
+    .dpt-menu > ul > li > a {
+        font-weight: var(--fw5);
+        padding: 0 1.5em;
+        border-bottom: 1px solid var(--border-color);
+    }
+
+    .dpt-menu .has-child > ul, .dpt-menu .mega {
+        position: absolute;
+        top: 0;
+        left: var(--percent100);
+        width: var(--percent100);
+        height: auto;
+        min-height: var(--percent100);
     }
 }
