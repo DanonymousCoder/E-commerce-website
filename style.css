@@ -566,7 +566,7 @@ form.search button:hover {
     }
 
     /* showing the first sub menu */
-    .dpt-menu .has-child:nth-child(1) {
+    .dpt-menu .mega {
         display: block;
     }
     .dpt-menu .beauty ul {
