@@ -620,6 +620,32 @@ form.search button:hover {
 
 
 
+ /* --------------------
+ * PRODUCT BLOCK STYLE
+ * --------------------*/
+.sectop {
+    justify-content: space-between;
+    padding-bottom: 0.5em;
+    margin-bottom: 2em;
+    border-bottom: 1px solid var(--border-color);
+}
+.sectop h2 {
+    position: relative;
+    font-size: 1.5em;
+    font-weight: var(--fw7);
+}
+.sectop h2 span:not(.circle) {
+    padding: 0 0 0 2em;
+}
+.sectop h2 .circle {
+    top: -5px;
+}
+
+.trending .products {
+    flex: 0 0 33.3333%;
+}
+
+
 
 @media  screen and (min-width: 992px) {
     .container {
