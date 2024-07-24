@@ -556,13 +556,21 @@ form.search button:hover {
 /* --------------------
     * SLIDER
     * ----------------*/
-.slider > div > .wrapper {
-    width: calc(100% - (300px + 2em));
-    margin-left: auto;
-}
 .slider .item {
     position: relative;
     height: 474px;
+}
+.slider .item::before {
+    content: "";
+    position: absolute;
+    top: 30%;
+    left: 0;
+    width: 450px;
+    height: 300px;
+    background-color: var(--white-color);
+    z-index: 1;
+    filter: blur(50px);
+    opacity: .8;
 }
 .slider .text-content {
     position: relative;
@@ -592,6 +600,23 @@ form.search button:hover {
 .swiper-pagination .swiper-pagination-bullet-active {
     background-color: var(--secondary-dark-color);
 }
+
+
+/* --------------------
+ * BRANDS
+ * --------------------*/
+ .brands .wrapper {
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 2em 0;
+ }
+ .brands .items img {
+    opacity: .25;
+    transition: opacity .3s;
+ }
+ .brands .item a:hover img {
+    opacity: 1;
+ }
 
 
 
@@ -758,5 +783,12 @@ form.search button:hover {
     }
     .dpt-menu .has-child:hover .mega {
         display: flex;
+    }
+
+
+    /* Slider */
+    .slider > div > .wrapper {
+        width: calc(100% - (300px + 2em));
+        margin-left: auto;
     }
 }
