@@ -18,11 +18,11 @@ function copyMenu() {
 copyMenu();
 
 // show mobile menu
-const menuButton = document.querySelector('.trigger'),
-        closeButton = document.querySelector('.t-close'),
-        addClass = document.querySelector('.site');
-menuButton.addEventListener('click', function() {
-    addClass.classList.toggle('showmenu')
+const menuButton = document.querySelector('.trigger');
+const closeButton = document.querySelector('.t-close');
+const addClass = document.querySelector('.site');
+menuButton.addEventListener('click' , function() {
+    addClass.classList.add('showmenu')
 })
 closeButton.addEventListener('click', function () {
     addClass.classList.remove('showmenu')
@@ -56,3 +56,14 @@ const swiper = new Swiper('.swiper', {
   },    
   
   });
+
+  //show search
+const searchButton = document.querySelector('.t-search');
+const tClose = document.querySelector('.search-close');
+const showSearch = document.querySelector('.site');
+searchButton.addEventListener('click' , function() {
+    showClass.classList.toggle('showSearch')
+})
+tClose.addEventListener('click' , function() {
+    showClass.classList.remove('showSearch')
+})
